@@ -1,8 +1,8 @@
 # "Guess The Number" Game
-# Project Created by Himanshu Raj (Follow me on instagram @himanshuhsr)
+# Project Created by Himanshu Raj (Follow me on Instagram @himanshuhsr)
 # Posted on - Kernel Bytes 
 
-# First create a function for last section of game when either user will guess the right number or user will exceed 
+# First create a function for the last section of the game when either user will guess the right number or user will exceed 
 # the maximum guess limit then this function will come into action. This will give two options either to opt for 
 # restart the game or exit.
 def last(username):
@@ -67,10 +67,10 @@ def main():
 		main()
 
 	# Now select a random number as per level using randint function by passing two parameter the lower and upper limit
-	number = random.randint(0, lastnumber)
+	number = random.randint(1, lastnumber)
 	# Put a notification message of playing game along with rules i.e, how many guess is allowed and between which they have to guess.
 	print(f"WELL {username} LET'S PLAY GAME!")
-	print(f"I am going to select a number in my mind between 0-{lastnumber}.")
+	print(f"I am going to select a number in my mind between 1-{lastnumber}.")
 	print(f"You have {maxguess} chance to guess what is in my mind. If you done so then you will win or otherwise you will loose.")
 	
 	# Now use while loop for checkimg the maximum guess allowed
